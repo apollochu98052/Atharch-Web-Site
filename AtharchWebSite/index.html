@@ -52,12 +52,11 @@
         </div><!--//branding-->
     </header><!--//header-->
     
-    
     <section class="hero-section">
 	    <div class="container">
 		    <div class="row figure-holder">
 			    <div class="col-12 col-md-6 pt-3 pt-md-4">
-					<h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">Introducing <strong>Archer</strong> -<br>
+					<h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">Introducing <strong>Archer</strong><br>
 					<span class="site-tagline mb-3">Your data, now in conversation</span>
 					</h2>
 
@@ -140,14 +139,14 @@
 				    <div class="item-inner text-center p-3 p-lg-5">
 					    <img class="mb-3" src="assets/images/icon-rocket.svg" alt="" />
 					    <h5>Faster Go-to-Market</h5>
-					    <div>Minimal development investment, reduced engineering complexity, and faster time to market - so your team can focus on core priorities and deliver measurable business results faster.</div>
+					    <div>Minimal data owner investment, reduced engineering complexity, and faster time to market - so you can focus on what matters most and drive measurable business results.</div>
 				    </div>
 			    </div>
 			    <div class="item col-12 col-lg-4">
 				    <div class="item-inner text-center p-3 p-lg-5">
 					    <img class="mb-3" src="assets/images/icon-cogs.svg" alt="" />
 					    <h5>Easy Setup & Maintenance</h5>
-					    <div>Build in minutes. Control your costs. Manage with clicks or drag-and-drop - all from your phone. One seamless mobile experience, powered by a secure, reliable cloud backend. Run AI with ease. </div>
+					    <div>Data owners can build in minutes, control costs, and manage everything from their phone with clicks or drag-and-drop. A seamless mobile experience powered by a secure, reliable cloud backend.</div>
 				    </div>
 			    </div>
 		    </div><!--//row-->
@@ -228,12 +227,11 @@
     
     <section class="cta-section py-5 theme-bg-secondary text-center">
 	    <div class="container">
-		    <h3 class="text-white font-weight-bold mb-3">Don't worry about data. You need insight.</h3>
+		    <h3 class="text-white font-weight-bold mb-3">What you need is not data, but insight beyond it.</h3>
 		    <div class="text-white mx-auto single-col-max-width section-intro">Powered by cutting-edge AI and cloud technologies, Archer simplifies data services, helping you stay focused on your core business.</div>
 		    <!-- <a class="btn theme-btn theme-btn-ghost theme-btn-on-bg mt-4" href="#">Download  Now - It's FREE</a> -->
 	    </div>
     </section>
-    
     
     <!-- <section id="quote" class="testimonial-section py-5">
 	    <div class="py-lg-5">
@@ -375,15 +373,46 @@
 	    
     </section> -->
            
-    
     <footer class="footer theme-bg-primary">
 	   
-
 	    <div class="download-area py-4">
 		    <div class="container text-center">
 			    <h3 class="mb-3">Get started now</h3>
-		    <div class="section-intro mb-4 single-col-max-width mx-auto">Download the Archer mobile app today. It’s free for all users with authorization from the knowledge base owner. If you’re a data owner and would like to create your own knowledge bases, feel free to contact us at sales@atharch.com.</div>
-			    <ul class="app-stores list-unstyled list-inline mx-auto  d-inline-block">
+		    <!-- <div class="section-intro mb-4 single-col-max-width mx-auto">Download the Archer mobile app today. It's free for all users with authorization from the knowledge base owner. If you're a data owner and would like to create your own knowledge bases, feel free to contact us at sales@atharch.com.</div> -->
+				
+				<div class="section-intro mb-4 single-col-max-width mx-auto">
+					Download the Archer mobile app today. It’s free for all users with authorization from the knowledge base owner. 
+					If you’re a data owner and would like to create your own knowledge bases, feel free to contact us at 
+					
+					<span id="sales-email-link"></span>.
+
+					<script>
+						(function() {
+							var u = "sales";
+							var d = "atharch.com";
+							var target = document.getElementById('sales-email-link');
+							if (target) {
+								var email = u + "@" + d;
+								var link = document.createElement('a');
+								link.href = 'mailto:' + email;
+								link.textContent = email;
+								
+								// 关键：手动指定样式，确保它在正文中看起来自然
+								link.style.color = "inherit"; // 继承正文颜色
+								link.style.textDecoration = "none"; // 初始无下划线
+								link.style.cursor = "pointer"; // 确保鼠标移上去变“小手”
+								
+								// 模拟 hover 效果
+								link.onmouseover = function() { this.style.textDecoration = "underline"; };
+								link.onmouseout = function() { this.style.textDecoration = "none"; };
+								
+								target.appendChild(link);
+							}
+						})();
+					</script>
+				</div>
+				
+				<ul class="app-stores list-unstyled list-inline mx-auto  d-inline-block">
 				    <li class="list-inline-item me-3"><a href="#"><img class="ios" src="assets/images/appstore-apple.svg" alt="app-store"></a></li>
 				    <!-- <li class="list-inline-item"><a href="#"><img class="android" src="assets/images/appstore-android.svg" alt="google play"></a></li> -->
 			    </ul>
@@ -409,7 +438,7 @@
 			    <div class="footer-col col-6 col-lg-3">
 				    <h4 class="col-heading">Resources</h4>
 				    <ul class="list-unstyled">
-					    <li><a class="text-link" href="#">FAQs</a></li>
+					    <!-- <li><a class="text-link" href="#">FAQs</a></li> -->
 					    <!-- <li><a class="text-link" href="#">Blog</a></li> -->
 					    <!-- <li><a class="text-link" href="#">Support</a></li> -->
 					    <!-- <li><a class="text-link" href="#">Developer APIs</a></li> -->
@@ -420,7 +449,7 @@
 				    <h4 class="col-heading">Legal</h4>
 				    <ul class="list-unstyled">
 					    <!-- <li><a class="text-link" href="#">Privacy</a></li> -->
-					    <li><a class="text-link" href="#">Terms of Services</a></li>
+					    <!-- <li><a class="text-link" href="#">Terms of Services</a></li> -->
 					    <!-- <li><a class="text-link" href="#">Security</a></li> -->
 				    </ul>
 			    </div>
@@ -439,13 +468,27 @@
 			            5020 148th Ave NE<br>
 			            Redmond, WA, 98052
 		            </div> -->
-		            <div>
+		            <!-- <div>
 			            <a class="text-link" href="#">info@atharch.com</a>
-			        </div>
-		            
+			        </div> -->
+					<div id="email-container"></div>
+						<script>
+							(function() {
+								var u = "info";
+								var d = "atharch.com";
+								var target = document.getElementById('email-container');
+								if (target) {
+									var link = document.createElement('a');
+									link.href = 'mailto:' + u + '@' + d;
+									link.textContent = u + '@' + d;
+									link.className = "text-link"; // 保持你原有的样式类
+									target.appendChild(link);
+								}
+							})();
+						</script>
 			    </div>
 		    </div>
-	    </div><!--//container-->
+	    </div>
 
 	    <div class="footer-bottom text-center pb-5">
 	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
@@ -458,20 +501,17 @@
 				<a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a>
 			</div>
 
-
 			<!-- </div>
 			<small class="copyright">Web site template by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a>
 	    </div> -->
 		
     </footer>
 
-       
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
     <script type="text/javascript" src="assets/plugins/flickity/flickity.pkgd.min.js"></script> 
     <script type="text/javascript" src="assets/js/main.js"></script> 
-
 
 </body>
 </html> 
