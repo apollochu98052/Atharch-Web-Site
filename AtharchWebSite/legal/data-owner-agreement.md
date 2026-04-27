@@ -158,6 +158,18 @@ Atharch Technology Ltd. charges the following fees:
 
 These costs are managed directly through your Google Cloud Platform account and billing relationship with Google.
 
+**4. ADDITIONAL FEATURE PERMITS**
+
+Additional permits apply for selected features when creating or updating a Knowledge Base:
+
+| Feature | Permit Cost |
+|---------|-------------|
+| Enable Bring-Your-Own-Key (BYOK) | 100 permits |
+| Enable Knowledge Base Searchable | 100 permits |
+| Enable Save Source Files | 10 permits |
+| Enable Public/Free Access | 5 permits |
+| Update Knowledge Base or FAQs(per file) | 1 permit |
+
 **ALL FEES PAID TO ATHARCH TECHNOLOGY LTD. ARE NON-REFUNDABLE DUE TO TECHNICAL REASONS RELATED TO PROJECT SETUP AND CONFIGURATION.**
 
 ---
